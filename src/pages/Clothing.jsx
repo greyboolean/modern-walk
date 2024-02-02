@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { toTitleCase } from "../utils/utils";
 import { getProductsByCategory } from "../api/products";
-import ProductGrid from "../components/ProductGrid";
+import Section from "../components/Section/Section";
+import ProductGrid from "../components/ProductGrid/ProductGrid";
 
 function Clothing({ category }) {
 	const [products, setProducts] = useState([]);
@@ -19,8 +20,9 @@ function Clothing({ category }) {
 
 	return (
 		<div>
-			<h1>{toTitleCase(category)}&apos;s Clothing</h1>
-			<ProductGrid products={products} />
+			<Section heading={`${toTitleCase(category)}'s Clothing`}>
+				<ProductGrid products={products} />
+			</Section>
 		</div>
 	);
 }

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { getAllProducts } from "../api/products";
-import ProductGrid from "../components/ProductGrid";
-import Category from "../components/CategoryCard";
+import Section from "../components/Section/Section";
+import ProductGrid from "../components/ProductGrid/ProductGrid";
+import CategoryGrid from "../components/CategoryGrid/CategoryGrid";
 
 function Home() {
 	const [products, setProducts] = useState([]);
@@ -19,13 +20,12 @@ function Home() {
 
 	return (
 		<div>
-			<h1>Flash Sales</h1>
-			<ProductGrid products={products.slice(0, 4)} />
-			<h1>Categories</h1>
-			<div>
-				<Category category="men" />
-				<Category category="women" />
-			</div>
+			<Section heading="Flash Sales">
+				<ProductGrid products={products.slice(0, 4)} />
+			</Section>
+			<Section heading="Categories">
+				<CategoryGrid />
+			</Section>
 		</div>
 	);
 }

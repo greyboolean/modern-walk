@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { toTitleCase } from "../utils/utils";
+import { toTitleCase } from "../../utils/utils";
 
 function CategoryCard({ category }) {
 	return (
