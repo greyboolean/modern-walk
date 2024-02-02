@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import { toTitleCase } from "../../utils/utils";
+import styles from "./CategoryCard.module.css";
 
 function CategoryCard({ category }) {
 	return (
-		<div className={`category ${category}`}>
-			<Link to={`/${category}s-clothing`}>
-				<span>{toTitleCase(category)}&apos;s Clothing</span>
-			</Link>
-		</div>
+		<Link to={`/${category}s-clothing`}>
+			<div className={`${styles.category} ${styles[category]}`}>
+				<span className={styles.title}>
+					{toTitleCase(category)}&apos;s Clothing
+				</span>
+			</div>
+		</Link>
 	);
 }
 

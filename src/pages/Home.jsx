@@ -20,7 +20,7 @@ function Home() {
 
 	return (
 		<div>
-			<Section heading="Flash Sales">
+			<Section heading="Flash Sale">
 				<ProductGrid products={products.slice(0, 4)} />
 			</Section>
 			<Section heading="Categories">

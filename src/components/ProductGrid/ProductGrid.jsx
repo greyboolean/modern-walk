@@ -1,13 +1,11 @@
 import Card from "../Card/Card";
+import styles from "./ProductGrid.module.css";
 
 function ProductGrid({ products }) {
 	return (
 		<div
-			style={{
-				display: "grid",
-				gridTemplateColumns: "repeat(4, 1fr)",
-				gap: "1rem",
-			}}
+			className={styles.grid}
+			style={{ gridTemplateColumns: "repeat(4, 1fr)" }}
 		>
 			{products.map((product) => (
 				<Card key={product.id} product={product} />

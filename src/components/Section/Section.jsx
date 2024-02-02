@@ -1,7 +1,9 @@
+import styles from "./Section.module.css";
+
 function Section({ heading, children }) {
 	return (
-		<div>
-			<h1>{heading}</h1>
+		<div className={styles.section}>
+			<h1 className={styles.heading}>{heading}</h1>
 			{children}
 		</div>
 	);
