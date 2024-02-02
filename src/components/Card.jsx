@@ -1,4 +1,4 @@
-function Card({ item: { title, image, price, description }, category }) {
+function Card({ product: { title, image, price, description }, category }) {
 	return (
 		<div className={`card ${category}`}>
 			<h1>{title}</h1>
