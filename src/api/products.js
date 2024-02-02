@@ -1,6 +1,21 @@
 import axios from "axios";
 
-export const getProducts = async (category) => {
+export const getAllProducts = async () => {
+	try {
+		const response = await axios.get(`https://fakestoreapi.com/products`);
+		if (response.status === 200) {
+			return response.data.filter(
+				(product) =>
+					product.category === "men's clothing" ||
+					product.category === "women's clothing"
+			);
+		}
+	} catch (error) {
+		return false;
+	}
+};
+
+export const getProductsByCategory = async (category) => {
 	try {
 		const response = await axios.get(
 			`https://fakestoreapi.com/products/category/${
