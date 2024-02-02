@@ -9,7 +9,7 @@ function ProductGrid({ products }) {
 				gap: "1rem",
 			}}
 		>
-			{products.slice(0, 4).map((product) => (
+			{products.map((product) => (
 				<Card key={product.id} product={product} />
 			))}
 		</div>

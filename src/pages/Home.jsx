@@ -20,7 +20,7 @@ function Home() {
 	return (
 		<div>
 			<h1>Flash Sales</h1>
-			<ProductGrid products={products} />
+			<ProductGrid products={products.slice(0, 4)} />
 			<h1>Categories</h1>
 			<div>
 				<Category category="men" />
