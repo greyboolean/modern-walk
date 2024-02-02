@@ -48,6 +48,10 @@
   background-color: #2bd9af;
 }
 
+.women .content {
+  background-color: #ff5e84;
+}
+
 .titleShorten {
   display: -webkit-box;
   -webkit-line-clamp: 1; /* Limit title to 1 line */
