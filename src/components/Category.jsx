@@ -2,10 +2,10 @@ function toTitleCase(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-function Category(type) {
+function Category(category) {
 	return (
-		<div className={`category ${type}`}>
-			<span>{toTitleCase(type)}&apos;s Clothing</span>
+		<div className={`category ${category}`}>
+			<span>{toTitleCase(category)}&apos;s Clothing</span>
 		</div>
 	);
 }

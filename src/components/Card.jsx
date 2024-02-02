@@ -1,6 +1,6 @@
-function Card({ item: { title, image, price, description }, type }) {
+function Card({ item: { title, image, price, description }, category }) {
 	return (
-		<div className={`card ${type}`}>
+		<div className={`card ${category}`}>
 			<h1>{title}</h1>
 			<img src={image} alt={title} />
 			<div className="content">
