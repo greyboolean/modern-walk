@@ -49,5 +49,5 @@ npm run build
 4. To preview the production build, run:
 
 ```bash
-npm run serve
+npm run preview
 ```
