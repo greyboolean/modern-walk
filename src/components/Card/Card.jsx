@@ -16,11 +16,11 @@ function Card({ product }) {
 				<img className={styles.image} src={image} alt={title} />
 			</div>
 			<div className={styles.content}>
-				<span className={styles.price}>Rs {price}</span>
+				<div className={styles.price}><span>Rs&nbsp;</span><span>{price}</span></div>
 				<p
 					className={`${styles.description} ${styles.descriptionShorten}`}
 				>
-					{description}
+					{description.replace(/(,|\/)(\S)/g, '$1 $2')}
 				</p>
 			</div>
 		</div>

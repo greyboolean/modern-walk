@@ -12,6 +12,7 @@ function Clothing({ category }) {
 			const products = await getProductsByCategory(category);
 			if (products) {
 				setProducts(products);
+				console.log(products);
 			}
 		};
 
