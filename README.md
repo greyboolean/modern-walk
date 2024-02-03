@@ -11,7 +11,7 @@ To install and use this app, follow these steps:
 1. Clone the repository by running the following command in your terminal:
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/greyboolean/modern-walk.git
 ```
 
 2. Navigate to the project directory:
