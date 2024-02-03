@@ -4,13 +4,13 @@ import styles from "./CategoryCard.module.css";
 
 function CategoryCard({ category }) {
 	return (
-		<Link to={`/${category}s-clothing`}>
-			<div className={`${styles.category} ${styles[category]}`}>
+		<div className={`${styles.category} ${styles[category]}`}>
+			<Link to={`/${category}s-clothing`}>
 				<span className={styles.title}>
 					{toTitleCase(category)}&apos;s Clothing
 				</span>
-			</div>
-		</Link>
+			</Link>
+		</div>
 	);
 }
 

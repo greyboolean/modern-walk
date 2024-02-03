@@ -5,6 +5,8 @@
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.15);
+  margin: 1rem;
+  width: calc(25% - 2rem);
 }
 
 .title {
